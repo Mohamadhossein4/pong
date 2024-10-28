@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="difficulty-menu" id="difficultyMenu">
+        <h2>Choose Difficulty</h2>
+        <button class="difficulty-button" data-difficulty="easy">Easy</button>
+        <button class="difficulty-button" data-difficulty="medium">Medium</button>
+        <button class="difficulty-button" data-difficulty="hard">Hard</button>
+    </div>
+    <div class="scoreboard">
+        <span id="playerScore">0</span> : <span id="computerScore">0</span>
+    </div>
+    <div class="game-container">
+        <canvas id="pongCanvas"></canvas>
+        <div id="countdown" class="countdown"></div>
+        <div class="controls">
+            <button id="pauseButton">Pause</button>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
